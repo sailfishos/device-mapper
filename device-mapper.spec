@@ -1,5 +1,5 @@
-%define device_mapper_version 1.02.28
-%define lvm2_version 2.02.79
+%define device_mapper_version 1.02.67
+%define lvm2_version 2.02.88
 
 # Do not reset Release to 1 unless both lvm2 and device-mapper 
 # versions are increased together.
