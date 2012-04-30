@@ -1,3 +1,6 @@
+* Mon Apr 30 2012 Marko Saukko <sage@merproject.org> - 1.02.74
+- Fixes MER#300: update device-mapper to recent version 1.02.74
+
 * Mon Nov 21 2011 Marko Saukko <marko.saukko@cybercom.com> - 1.02.67
 - Updated to version 1.02.67
 
