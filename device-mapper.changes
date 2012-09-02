@@ -1,3 +1,7 @@
+* Fri Aug 31 2012 David Greaves <david@dgreaves.com> - 1.02.74-2
+- Remove pointless definition of _exec_prefix which seemed to break
+  on armv7tnhl
+
 * Mon Apr 30 2012 Marko Saukko <sage@merproject.org> - 1.02.74
 - Fixes MER#300: update device-mapper to recent version 1.02.74
 

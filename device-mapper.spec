@@ -7,7 +7,7 @@
 Name: device-mapper
 Summary: Device mapper utility
 Version: %{device_mapper_version}
-Release: 1
+Release: 2
 License: GPLv2
 Source0: ftp://sources.redhat.com/pub/lvm2/LVM2.%{lvm2_version}.tgz
 Group: System/Base
@@ -46,9 +46,7 @@ This package contains the device-mapper shared library, libdevmapper.
 %setup -q -n LVM2.%{lvm2_version}
 
 %build
-%define _exec_prefix ""
 %configure --with-user= --with-group= --with-device-uid=0 --with-device-gid=6 --with-device-mode=0660 --enable-pkgconfig
-%define _exec_prefix /
 make device-mapper
 
 %install
