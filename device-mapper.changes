@@ -1,3 +1,8 @@
+* Wed Sep 19 2012 Marko Saukko <marko.saukko@jollamobile.com> - 1.02.76
+- Move the dmsetup binary back to /sbin/ which was changed in previous change as
+  _exec_prefix defines changed the behaviour of %{_sbindir} macro
+- Also added .yaml and updated to latest release.
+
 * Fri Aug 31 2012 David Greaves <david@dgreaves.com> - 1.02.74-2
 - Remove pointless definition of _exec_prefix which seemed to break
   on armv7tnhl

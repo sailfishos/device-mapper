@@ -1,0 +1,45 @@
+Name: device-mapper
+Summary: Device mapper utility
+Version: 1.02.76
+Release: 1
+Group: System/Base
+License: GPLv2
+URL: http://sources.redhat.com/dm
+Sources:
+    - ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.97.tgz
+Description: |
+    This package contains the supporting userspace utility, dmsetup,
+    for the kernel device-mapper.
+
+Requires:
+    - device-mapper-libs = %{version}-%{release}
+Configure: configure
+ConfigOptions:
+    - --sbindir=/sbin/
+    - --with-user=
+    - --with-group=
+    - --with-device-uid=0
+    - --with-device-gid=6
+    - --with-device-mode=0660
+    - --enable-pkgconfig
+Builder: none
+SubPackages:
+    - Name: libs
+      Summary: Device-mapper shared library
+      Group: System/Libraries
+      License: LGPLv2.1
+      AutoDepend: False
+      Description: This package contains the device-mapper shared library, libdevmapper.
+      Obsoletes:
+          - device-mapper < 1.02.17-6
+
+    - Name: devel
+      Summary: Development libraries and headers for device-mapper
+      Group: Development/Libraries
+      License: LGPLv2.1
+      Description: |
+          This package contains files needed to develop applications that use
+          the device-mapper libraries.
+      Requires:
+          - device-mapper-libs = %{version}-%{release}
+
