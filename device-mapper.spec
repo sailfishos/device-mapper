@@ -16,6 +16,7 @@ License:    GPLv2
 URL:        http://sources.redhat.com/dm
 Source0:    ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.97.tgz
 Source100:  device-mapper.yaml
+Patch0:     device-mapper-aarch64.patch
 Requires:   device-mapper-libs = %{version}-%{release}
 
 %description
@@ -49,6 +50,7 @@ the device-mapper libraries.
 
 %prep
 %setup -q -n LVM2.2.02.97
+%patch0 -p1
 
 # >> setup
 # << setup

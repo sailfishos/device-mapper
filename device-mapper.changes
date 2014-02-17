@@ -1,3 +1,6 @@
+* Mon Feb 17 2014 Oleg Girko <oleg.girko@jollamobile.com> - 1.02.76
+- Add aarch64 support.
+
 * Wed Sep 19 2012 Marko Saukko <marko.saukko@jollamobile.com> - 1.02.76
 - Move the dmsetup binary back to /sbin/ which was changed in previous change as
   _exec_prefix defines changed the behaviour of %{_sbindir} macro
